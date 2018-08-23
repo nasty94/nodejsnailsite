@@ -1,0 +1,222 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/client.js"></script>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <!-- Google Fonts CDN-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+
+    <!-- Navigation bar: Website title      Home Apptmnts    Pricing   Previous Work    Contact-->
+    <!-- TODO: Make Nav Bar Responsive-->
+      <nav style="background-color:#ff99cc; border-color:#ff99cc;" class="navbar navbar-default navbar-expand-md topnav" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            
+            <!--Collapse button-->
+            <button id="hamburgerBTN" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a href="#" class="navbar-brand">Diann's Nails <span>brandIMG</span> </a>
+          </div> 
+          
+            <!--Navbar links -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                
+                <!-- Items for nav menu with links-->
+                <li><a href="/">Home</a></li>
+                <li><a href="#appt-price">Schedule an Appointment</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="https://www.instagram.com/nailsbydiann/" target="_blank">Previous Work</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li>
+                  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"><span><i class="fa fa-bars"></i></span></button>-->
+                </li>
+              </ul>
+
+            </div>
+        </div>
+      </nav>
+    </head>
+    <!--  Header -->
+    <body>
+      <main>
+        <div class="header-div jumbotron jumbotron-fluid">
+          <div class="container" align="center">
+            <!-- Change Img Path -->
+            <img src="https://cdn.glitch.com/5c937ff1-8f2d-4ef2-9648-a7461abff9cc%2FDiannsNails.jpg?1533922114995" class="align-margin banner-img">
+          </div>
+        </div>
+        
+        <!-- Home screen picture-->
+        <div class="container" style="margin-top:0px;">
+          <div class="row">
+            <div class="col-sm-12 col-lg-6">
+              <!-- Change Img Path -->
+              <img src="https://cdn.glitch.com/5c937ff1-8f2d-4ef2-9648-a7461abff9cc%2F25993124_10212317658954672_421576144_o.jpg?1533877317550" class="left-img" style="border-radius:50%; margin-top:-20px;">
+            </div>
+            <!-- About Me Section Text, Image, Appt Button. Used table to formatting-->
+            <div class="col-sm-12 col-lg-6" align="center">
+              <table>
+                <tr><th><h2>About Me</h2></th></tr>
+                  <tr>
+                    <td>
+                      <p> <!--<img src="https://cdn.glitch.com/5c937ff1-8f2d-4ef2-9648-a7461abff9cc%2Fdiann%20headshot.jpg?1533922974784" width="30%" height="auto" class="circle-headshot" align="right" style="border:1px solid #ff99cc">--> 
+                        Put your personal or business description here!
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+              
+                <button name="Appt-Btn" id="Appt2" type="button" vertical-align="middle" class="btn btn-primary schedButton" style="background-color:#ff66b3; margin-top:10%;" onclick="location.href='#appt-price'">Schedule An Appointment</button>                            
+            </div>
+          </div>
+        </div>
+        <div style="text-align:middle;" class="container-fluid">
+          <!-- Carousel -->
+          <!-- TODO: Change slides -->
+            
+
+                
+
+        </div>
+        
+        <br />
+        <br />
+        
+        <!-- Section 2: Appointments left pricing right-->
+        <div class="page-break" style="margin-top:10%;"></div>
+        <div id="appt-price" class="jumbotron section-header">
+          <h2><u>Appointments & Pricing</u></h2>  
+        </div>
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div  id="makeAppt" class="col-sm-12 col-lg-6" style="padding-left:5vw; padding-bottom:10vw; padding-right:5vw; padding-top:1vw;">
+              
+                <!-- Input form-->
+                <form>
+                  <fieldset form="#makeAppt">
+                    <legend class="box-header" ><h3>Make Your Appointment</h3></legend>
+    
+                      <table style="margin-bottom:5%;">
+                        <tr><button id="appt0" type="button" class="btn btn-def btn-lg btn-block appt-spacing"><div class="appt-spacing"><span class="badge">1</span> Input Name</div></button></tr>
+                        <tr><div class="appt-spacing" style="display:none" id="insert0"><input id="input0" type="text" name="nameValue" placeholder="Type Your Name" required></div></tr>
+                        <tr><button id="appt1" type="button" class="btn btn-def btn-lg btn-block appt-spacing"><div class="appt-spacing"><span class="badge">2</span> Select a date</div></button></tr>
+                        <tr><div class="appt-spacing" style="display:none" id="insert1"><input id="input1" type="date" name="dateValue" min="1899-01-01" required></div></tr>
+                        <tr><button id="appt2" type="button" class="btn btn-def btn-lg btn-block appt-spacing"><div class="appt-spacing"><span class="badge">3</span> Choose an Available Time</div></button></tr>
+                        <tr><div class="appt-spacing" style="display:none" id="insert2"><select id="input2" name="timeValue" required disabled></select></div></tr>
+                        <tr><button id="appt3" type="button" class="btn btn-def btn-lg btn-block appt-spacing"><div class="appt-spacing"><span class="badge">4</span> Enter Your Email and Hit Sumbit</div></button></tr>
+                        <tr><div class="appt-spacing" style="display:none" id="insert3"><input id="input3" type="email" name="emailValue" placeholder="Enter Email Address" required></div></tr>
+                        <tr><button type="submit" class="btn btn-def btn-block">Submit</button></tr>
+                        <tr><p style="padding-left:auto;" id="apptResponse"></p></tr>
+                    </table>
+                    
+                  </fieldset>
+                </form>
+            </div>
+            
+            
+            
+            <!-- Pricing section-->
+            <div id="pricing" class="col-sm-12 col-lg-6" style="text-align:center;">
+              <h3 class="box-header" >Pricing</h3>
+                <div class="row">
+                  <!-- line breaks added to align text formatting -->
+                  <div style="background-color:#ffeaf4" class="col-sm-4"><font size="20vw">$5</font><p class="h0 pAlign"><br>Regular Polish</p></div>
+                  <div style="background-color:#ffe0ef" class="col-sm-4"><font size="20vw">$10</font><p class="h0 pAlign"><br>Gel Polish</p></div>
+                  <div style="background-color:#ffd6ea" class="col-sm-4"><font size="20vw">$12</font><p class="h0 pAlign">Chrome/Mood <br>Change Polish</p></div>
+                </div>
+
+            
+            </div>
+              
+          </div>
+        </div>
+
+        <div class="page-break" style="margin-top:5%;"></div>
+        
+        <!-- Contact Section: Add info below-->
+        <div class="jumbotron section-header">
+          <h2><u>Contact Info</u></h2>  
+        </div>
+        
+        <div id="contact" class="container-fluid" align="center" style="margin-top:10%; margin-bottom:4%;">
+          <table style="padding-top:10%; margin-top:10%;">
+            <tr><h2>Email:</h2></tr>
+            <tr><h2>Phone Number:</h2></tr>
+            <tr><h2>Instagram:</h2></tr>
+          </table>
+        </div>
+        
+        <!-- -->
+      </main>
+    </body>
+    
+
+ 
+  <!-- Carousel -->
+              <!-- TODO: Change slides 
+              <div id="myCarousel" class="carousel slide shadow" data-ride="carousel">
+                <!-- Indicators 
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                -->
+                <!-- Wrapper for slides
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="https://cdn.glitch.com/5c937ff1-8f2d-4ef2-9648-a7461abff9cc%2F25993124_10212317658954672_421576144_o.jpg?1533877317550" alt="Nail Pic Here">
+                  </div>
+
+                  <div class="item">
+                    <img src="https://cdn.glitch.com/5c937ff1-8f2d-4ef2-9648-a7461abff9cc%2F25993124_10212317658954672_421576144_o.jpg?1533877317550" alt="Nail Pic Here">
+                  </div>
+
+                  <div class="item">
+                    <img src="https://cdn.glitch.com/5c937ff1-8f2d-4ef2-9648-a7461abff9cc%2F25993124_10212317658954672_421576144_o.jpg?1533877317550" alt="Nail Pic Here">
+                  </div>
+                </div>
+
+                <!-- Left and right controls
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div> -->
+</html>
+
